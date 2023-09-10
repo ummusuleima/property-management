@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwindcss elements -->
+    <link
+      rel="stylesheet"
+      href="../css/index.min.css"
+    />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>PROPERTY MANAGEMENT</title>
+    <link rel="icon" type="image/x-icon" href="../images/softnet logo.png" />
+  </head>
+  <body>
+    <div
+      class="min-h-full scrollbar scrollbar-track-gray-100 scrollbar-thumb-gray-900"
+    >
+      <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
+      <div
+        id="sidebar"
+        class="fixed inset-0 z-40 flex hidden"
+        role="dialog"
+        aria-modal="true"
+      >
+        <div
+          class="fixed inset-0 bg-gray-600 bg-opacity-75"
+          aria-hidden="true"
+        ></div>
+
+        <div
+          class="relative flex w-full max-w-xs flex-1 flex-col bg-crvsblue-700 pt-5 pb-4"
+        >
+          <div class="absolute top-0 right-0 -mr-12 pt-2">
+            <button
+              id="close_sidebar"
+              type="button"
+              class="ml-1 flex h-10 w-10 items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            >
+              <span class="sr-only">Close sidebar</span>
+              <!-- Heroicon name: outline/x -->
+              <svg
+                class="h-6 w-6 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- <div class="flex-shrink-0 flex items-center px-4"></div> -->
+
+          <!--nav bar place-->
+          <!--ection include="navigation.html"></section-->
+        </div>
+
+        <div class="w-14 flex-shrink-0" aria-hidden="true">
+          <!-- Dummy element to force sidebar to shrink to fit close icon -->
+        </div>
+      </div>
+
+      <!-- Static sidebar for desktop -->
+      <div class="hidden lg:fixed lg:inset-y-0 lg:flex lg:w-64 lg:flex-col">
+        <!-- Sidebar component, swap this element with another sidebar if you like -->
+
+        <div
+          class="flex flex-grow flex-col overflow-y-auto bg-crvsblue-700 pt-5 pb-4"
+        >
+          <div
+            class="flex w-full flex-shrink-0 flex-row items-center justify-center space-x-3 px-4"
+          >
+            <image src="../images/softnet logo.png" class="h-12 w-36" />
+           
+          </div> 
+          <div> <h6 class="text-center font-bold tracking-widest text-white">PROPERTY MANAGEMENT</h6></div>
+
+          <!-- navigation section -->
+          <!--section include="navigation.html"></section-->
+        
+          <nav class="mt-5 flex flex-1 flex-col divide-y" aria-label="Sidebar">
+            <div class="space-y-1 px-2">
+              <a
+                href="./dashboard.html"
+                class="dashboard group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+                aria-current="page"
+              >
+                <svg
+                  class="mr-4 h-6 w-6 flex-shrink-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  />
+                </svg>
+                Dashboard
+              </a>
+        
+              <details
+                class="parentDetails details-toggle group group flex w-full cursor-pointer items-center rounded-md px-1 py-2 text-sm font-bold text-white hover:text-white"
+              >
+                <summary class="relative flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mr-4 h-6 w-6 flex-shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                    />
+                  </svg>
+                  <h>User Management</h>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="absolute right-0 h-4 w-4 group-open:-rotate-180 group-open:transform group-open:transition group-open:duration-500 group-open:ease-in-out"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </summary>
+        
+                <div class="border-l-2 border-white pl-6">
+                  <div
+                    class="mt-2 flex w-full flex-row items-center space-x-2 rounded-md bg-crvsblue-700 py-2 font-medium"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 flex-shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
+                      />
+                    </svg>
+                    <a
+                    class="staff flex w-full rounded-md py-2 px-2 text-sm text-white hover:bg-crvsblue-800"
+                    href="./employeemanagement.html"
+                    >Employee Management</a
+                  >
+                  </div>
+        
+                 
+                 
+        
+                  <!--details
+                    class="childDetails logs-details group group flex w-full cursor-pointer items-center rounded-md py-2 text-sm font-bold leading-6 text-white hover:text-white"
+                  >
+                    <summary class="relative flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="mr-4 h-6 w-6 flex-shrink-0"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                        />
+                      </svg>
+                      <h>Activity Logs</h>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="absolute right-0 h-4 w-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </summary>
+                    <div
+                      class="mt-2 ml-2 space-y-2 border-l-2 border-white px-2 py-4 pl-6 font-medium"
+                    >
+                      <ul class="list-disc pl-2">
+                        <li>
+                          <a
+                            class="all-logs flex rounded-md py-2 px-4 text-sm hover:bg-crvsblue-800"
+                            href="./alllogs.html"
+                            >All logs</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </details-->
+                </div>
+              </details>
+        
+              <details
+                class="parentDetails registration-toggle group flex w-full cursor-pointer items-center rounded-md px-1 py-2 text-sm font-bold text-white hover:text-white"
+              >
+                <summary class="relative flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mr-4 h-6 w-6 flex-shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M16 15v-1a4 4 0 00-4-4H8m0 0l3 3m-3-3l3-3m9 14V5a2 2 0 00-2-2H6a2 2 0 00-2 2v16l4-2 4 2 4-2 4 2z"
+                    />
+                  </svg>
+                  <a
+                      class="staff flex w-full rounded-md py-2 px-2 text-sm text-white hover:bg-crvsblue-800"
+                      href="./projectmanagement.html"
+                      >Project Management</a>
+                  
+                  
+                  
+                </summary>
+        
+                
+              </details>
+        
+              <details
+                class="parentDetails death-toggle group flex w-full cursor-pointer items-center rounded-md px-1 py-2 text-sm font-bold text-white hover:text-white"
+              >
+              <summary class="relative flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mr-4 h-6 w-6 flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16 15v-1a4 4 0 00-4-4H8m0 0l3 3m-3-3l3-3m9 14V5a2 2 0 00-2-2H6a2 2 0 00-2 2v16l4-2 4 2 4-2 4 2z"
+                  />
+                </svg>
+                <a
+                    class="staff flex w-full rounded-md py-2 px-2 text-sm text-white hover:bg-crvsblue-800"
+                    href="./propertymanagement.html"
+                    >Property Management</a>
+                
+                
+                
+              </summary>
+        
+             
+              </details>
+        
+              <details
+                class="parentDetails marriage-toggle group flex w-full cursor-pointer items-center rounded-md px-1 py-2 text-sm font-bold text-white hover:text-white"
+              >
+                <summary class="relative flex items-center">
+                  <svg
+                    class="mr-4 h-6 w-6 flex-shrink-0"
+                    viewBox="0 0 31 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 14C13.5899 14 16.5 11.0899 16.5 7.5C16.5 3.91015 13.5899 1 10 1C6.41015 1 3.5 3.91015 3.5 7.5C3.5 11.0899 6.41015 14 10 14Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                    />
+                    <path
+                      d="M18.425 1.2375C18.9996 1.08166 19.5922 1.00181 20.1875 1C21.9115 1 23.5648 1.68482 24.7837 2.90381C26.0027 4.12279 26.6875 5.77609 26.6875 7.5C26.6875 9.22391 26.0027 10.8772 24.7837 12.0962C23.5648 13.3152 21.9115 14 20.1875 14"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1 18.675C2.01493 17.2307 3.36255 16.0519 4.92901 15.2381C6.49547 14.4243 8.23477 13.9995 10 13.9995C11.7652 13.9995 13.5045 14.4243 15.071 15.2381C16.6375 16.0519 17.9851 17.2307 19 18.675"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20.1875 14C21.9529 13.9989 23.6925 14.4232 25.2592 15.237C26.8258 16.0508 28.1733 17.2301 29.1875 18.675"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+        
+                  <h>Property Request</h>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="absolute right-0 h-4 w-4 group-open:-rotate-180 group-open:transform group-open:transition group-open:duration-500 group-open:ease-in-out"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </summary>
+        
+                <div class="mt-2 space-y-2 border-l-2 border-white pl-6">
+                  <a
+                    href="./devicerequest.html"
+                    class="marriageRegistration group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+                    aria-current="page"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="mr-4 h-6 w-6 flex-shrink-0"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    Request
+                  </a>
+        
+                 
+                </div>
+              </details>
+
+             
+              <details
+                class="parentDetails report-toggle group flex w-full cursor-pointer items-center rounded-md px-1 py-2 text-sm font-bold text-white hover:text-white"
+              >
+                <summary class="relative flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="mr-4 h-6 w-6 flex-shrink-0"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z"
+                    />
+                  </svg>
+        
+                  <h>Reports</h>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="absolute right-0 h-4 w-4 group-open:-rotate-180 group-open:transform group-open:transition group-open:duration-500 group-open:ease-in-out"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </summary>
+        
+                <div class="mt-2 space-y-2 border-l-2 border-white pl-6">
+                  
+                  <a
+                    href="./revenuereport.html"
+                    class="revenueReports group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+                    aria-current="page"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="mr-4 h-6 w-6 flex-shrink-0"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"
+                      />
+                    </svg>
+        
+                    <h> Revenue Report </h>
+                  </a>
+                </div>
+              </details>
+        
+              
+            </div>
+          </nav>
+
+          
+          
+
+        </div>
+      </div>
+
+      <div class="flex flex-1 flex-col lg:pl-64">
+        <main class="relative min-h-screen flex-1 pb-8">
+          <!-- Page header -->
+         
+
+          <div class="mt-8">
+            <div class="mx-auto max-w-full px-4 sm:px-6 lg:px-8">
+              <div
+                class="mt-2 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5 justify-center"
+              >
+                <!-- Cardh -->
+                <div class="overflow-hidden rounded-lg bg-white shadow">
+                  <div class="p-5">
+                    <div class="flex items-center">
+                      <div class="flex-shrink-0">
+                        <!-- Heroicon name: outline/scale -->
+
+                        <svg
+                          class="h-6 w-6 text-gray-500"
+                          viewBox="0 0 26 26"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M13 25C19.6274 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13C1 19.6274 6.37258 25 13 25Z"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M8.5 14.5C9.32843 14.5 10 13.8284 10 13C10 12.1716 9.32843 11.5 8.5 11.5C7.67157 11.5 7 12.1716 7 13C7 13.8284 7.67157 14.5 8.5 14.5Z"
+                            fill="currentColor"
+                          ></path>
+                          <path
+                            d="M17.5 14.5C18.3284 14.5 19 13.8284 19 13C19 12.1716 18.3284 11.5 17.5 11.5C16.6716 11.5 16 12.1716 16 13C16 13.8284 16.6716 14.5 17.5 14.5Z"
+                            fill="currentColor"
+                          ></path>
+                          <path
+                            d="M16.3125 18C15.3308 18.652 14.1785 18.9998 13 18.9998C11.8215 18.9998 10.6692 18.652 9.6875 18"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M13 1C11 3.5 11 6 11 6C11 6.53043 11.2107 7.03914 11.5858 7.41421C11.9609 7.78929 12.4696 8 13 8C13.5304 8 14.0391 7.78929 14.4142 7.41421C14.7893 7.03914 15 6.53043 15 6"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+
+                      <div class="ml-5 w-0 flex-1">
+                        <dl>
+                          <dt class="truncate font-bold text-gray-500">
+                            Total Employee
+                          </dt>
+                          <dd>
+                            <div class="text-xl font-bold text-gray-900">
+                              300
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-sky-400 px-5 py-3"></div>
+                </div>
+
+                <div class="overflow-hidden rounded-lg bg-white shadow">
+                  <div class="p-5">
+                    <div class="flex items-center">
+                      <div class="flex-shrink-0">
+                        <!-- Heroicon name: outline/scale -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6 text-gray-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                          />
+                        </svg>
+                      </div>
+
+                      <div class="ml-5 w-0 flex-1">
+                        <dl>
+                          <dt class="truncate font-bold text-gray-500">
+                            Total Projects
+                          </dt>
+                          <dd>
+                            <div class="text-xl font-bold text-gray-900">
+                              28
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-red-400 px-5 py-3"></div>
+                </div>
+
+                <div class="overflow-hidden rounded-lg bg-white shadow">
+                  <div class="p-5">
+                    <div class="flex items-center">
+                      <div class="flex-shrink-0">
+                        <!-- Heroicon name: outline/scale -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6 text-gray-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                          />
+                        </svg>
+                      </div>
+
+                      <div class="ml-5 w-0 flex-1">
+                        <dl>
+                          <dt class="truncate font-bold text-gray-500">
+                            Total prperties.
+                          </dt>
+                          <dd>
+                            <div class="text-xl font-bold text-gray-900">
+                              300,659
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-orange-200 px-5 py-3"></div>
+                </div>
+
+                
+
+
+                <!-- More items... -->
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center py-12">
+              <h class="text-2xl font-bold uppercase underline">
+                Total number of registrated events per month of this year</h
+              >
+              <canvas
+                id="lineGraph"
+                height="90"
+                class="mt-6 px-8 py-4"
+              ></canvas>
+            </div>
+
+            <div
+              class="mx-auto grid max-w-full grid-cols-1 gap-4 px-4 py-12 sm:grid-cols-2 sm:px-6 lg:grid-cols-2 lg:px-8"
+            >
+              <!-- <div class="flex w-full flex-col items-center space-y-6 h-[600px]">
+              <h class="text-2xl font-bold uppercase underline"
+                >Total revenue(TZS) of all registered events per month - this
+                year</h
+              >
+              <div class="h-full w-full" id="barMulti"></div>
+            </div> -->
+
+             
+
+              
+
+              <!-- <div
+                class="flex h-[600px] w-full  space-y-6"
+              >
+                <h class="text-2xl font-bold uppercase underline">Total </h>
+
+                
+               
+              </div> -->
+
+              <!-- <div id="sample"></div> -->
+            </div>
+          </div>
+
+          <!-- <div id="sampleTable" height="90" class="mt-6 px-8 py-4"></div> -->
+        </main>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="../js/buttonControls.js"
+      type="text/javascript"
+      charset="utf8"
+    ></script>
+
+    <script src="../js/section.js"></script>
+
+    <!-- scripts for sections -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn3.devexpress.com/jslib/21.2.7/css/dx.light.css"
+    />
+
+    <!-- DevExtreme library -->
+    <script
+      type="text/javascript"
+      src="https://cdn3.devexpress.com/jslib/21.2.7/js/dx.all.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.1.1/exceljs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+
+    <!-- toast message cdns -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script
+    src="../js/buttonControls.js"
+    type="text/javascript"
+    charset="utf8"
+  ></script>
+
+  <!-- Line Chart.js -->
+  <script>
+    // const labels = ["Male", "Female"];
+
+    // const data = {
+    //   labels: labels,
+    //   datasets: [
+    //     {
+    //       label: "Birth Registration",
+    //       backgroundColor: ["#075985", "#38bdf8"],
+    //       borderColor: "#EBF2FA",
+    //       data: [109, 229],
+    //     },
+    //   ],
+    // };
+    // const deathData = {
+    //   labels: labels,
+    //   datasets: [
+    //     {
+    //       label: "Death Registration",
+    //       backgroundColor: ["#D44D5C", "#fca5a5"],
+    //       borderColor: "#EBF2FA",
+    //       data: [109, 500],
+    //     },
+    //   ],
+    // };
+
+    // const marriageData = {
+    //   labels: labels,
+    //   datasets: [
+    //     {
+    //       label: "Marriage Registration",
+    //       backgroundColor: ["#a16207", "#fed7aa"],
+    //       borderColor: "#EBF2FA",
+    //       data: [109, 500],
+    //     },
+    //   ],
+    // };
+
+    // const divorceData = {
+    //   labels: labels,
+    //   datasets: [
+    //     {
+    //       label: "Divorce Registration",
+    //       backgroundColor: ["#ea580c", "#fcd34d"],
+    //       borderColor: "#EBF2FA",
+    //       data: [109, 500],
+    //     },
+    //   ],
+    // };
+
+    // const adaptionData = {
+    //   labels: labels,
+    //   datasets: [
+    //     {
+    //       label: " Adaption Registration",
+    //       backgroundColor: ["#4f46e5", "#c4b5fd"],
+    //       borderColor: "#EBF2FA",
+    //       data: [109, 500],
+    //     },
+    //   ],
+    // };
+
+    // const birthConfig = {
+    //   type: "doughnut",
+    //   data: data,
+    //   options: {},
+    // };
+
+    // const deathConfig = {
+    //   type: "doughnut",
+    //   data: deathData,
+    //   options: {},
+    // };
+
+    // const marriageConfig = {
+    //   type: "doughnut",
+    //   data: marriageData,
+    //   options: {},
+    // };
+
+    // const divorceConfig = {
+    //   type: "doughnut",
+    //   data: divorceData,
+    //   options: {},
+    // };
+
+    // const adaptionConfig = {
+    //   type: "doughnut",
+    //   data: adaptionData,
+    //   options: {},
+    // };
+
+    // const birthChart = new Chart(
+    //   document.getElementById("birthChart"),
+    //   birthConfig
+    // );
+    // const deathChart = new Chart(
+    //   document.getElementById("deathChart"),
+    //   deathConfig
+    // );
+    // const marrigeChart = new Chart(
+    //   document.getElementById("marriageChart"),
+    //   marriageConfig
+    // );
+    // const divorceChart = new Chart(
+    //   document.getElementById("divorceChart"),
+    //   divorceConfig
+    // );
+    // const adaptionChart = new Chart(
+    //   document.getElementById("adaptionChart"),
+    //   adaptionConfig
+    // );
+
+    // Line Graph
+    const _labels = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+
+    function getRandomNumbers() {
+      // Create an empty array to store the random numbers
+      const numbers = [];
+
+      // Generate 12 random numbers and add them to the array
+      for (let i = 0; i < 12; i++) {
+        numbers.push(Math.floor(Math.random() * (1000 - 100 + 1)) + 100);
+      }
+
+      return numbers;
+    }
+
+    const _data = {
+      labels: _labels,
+      datasets: [
+        {
+          label: "Birth",
+          data: getRandomNumbers(),
+        },
+        {
+          label: "Death",
+          data: getRandomNumbers(),
+        },
+        {
+          label: "Marriage",
+          data: getRandomNumbers(),
+        },
+        {
+          label: "Divorce",
+          data: getRandomNumbers(),
+        },
+        {
+          label: "Adaption",
+          data: getRandomNumbers(),
+        },
+      ],
+    };
+
+    const _config = {
+      type: "line",
+      data: _data,
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: "top",
+          },
+        },
+      },
+    };
+
+    const lineGraph = new Chart(document.getElementById("lineGraph"), _config);
+  </script>
+
+  <!-- Pie Chart DevExtreme -->
+  <script>
+    $(() => {
+      const legendSettings = {
+        verticalAlignment: "bottom",
+        horizontalAlignment: "center",
+        itemTextPosition: "right",
+        rowCount: 2,
+      };
+      const seriesOptions = [
+        {
+          argumentField: "name",
+          valueField: "area",
+          label: {
+            visible: true,
+            format: "percent",
+          },
+        },
+      ];
+      const sizeGroupName = "piesGroup";
+
+      $("#sample").dxPieChart({
+        export: {
+          enabled: true,
+        },
+        sizeGroup: sizeGroupName,
+        palette: "Soft Pastel",
+        title: "Birth Registration",
+        legend: legendSettings,
+        dataSource: [
+          {
+            name: "Male",
+            area: 0.29,
+          },
+          {
+            name: "Water",
+            area: 0.71,
+          },
+        ],
+        series: seriesOptions,
+      });
+    });
+  </script>
+
+  <!-- Line Devextreme -->
+  <script>
+    const dataSource = [
+      {
+        country: "January",
+        Birth: 101.2,
+        Death: 900.4,
+        Adoption: 283.2,
+        Marriage: 164.3,
+        Divorce: 206.1,
+      },
+      {
+        country: "Febuary",
+        Birth: 101.2,
+        Death: 800.4,
+        Adoption: 383.2,
+        Marriage: 464.3,
+        Divorce: 316.1,
+      },
+      {
+        country: "March",
+        Birth: 71.2,
+        Death: 910.4,
+        Adoption: 483.2,
+        Marriage: 564.3,
+        Divorce: 216.1,
+      },
+      {
+        country: "April",
+        Birth: 71.2,
+        Death: 910.4,
+        Adoption: 483.2,
+        Marriage: 564.3,
+        Divorce: 216.1,
+      },
+      {
+        country: "May",
+        Birth: 71.2,
+        Death: 910.4,
+        Adoption: 483.2,
+        Marriage: 564.3,
+        Divorce: 216.1,
+      },
+      {
+        country: "June",
+        Birth: 71.2,
+        Death: 910.4,
+        Adoption: 483.2,
+        Marriage: 564.3,
+        Divorce: 216.1,
+      },
+      {
+        country: "July",
+        Birth: 71.2,
+        Death: 910.4,
+        Adoption: 483.2,
+        Marriage: 564.3,
+        Divorce: 216.1,
+      },
+      {
+        country: "August",
+        Birth: 71.2,
+        Death: 910.4,
+        Adoption: 483.2,
+        Marriage: 524.3,
+        Divorce: 216.1,
+      },
+      {
+        country: "September",
+        Birth: 11.2,
+        Death: 930.4,
+        Adoption: 430.2,
+        Marriage: 564.3,
+        Divorce: 21,
+      },
+      {
+        country: "October",
+        Birth: 111,
+        Death: 910,
+        Adoption: 483.2,
+        Marriage: 564,
+        Divorce: 216,
+      },
+      {
+        country: "November",
+        Birth: 710.2,
+        Death: 100.4,
+        Adoption: 83.2,
+        Marriage: 54.3,
+        Divorce: 26.1,
+      },
+      {
+        country: "December",
+        Birth: 71,
+        Death: 91.4,
+        Adoption: 83.2,
+        Marriage: 56,
+        Divorce: 300,
+      },
+    ];
+    $(() => {
+      const chart = $("#sampleTable").dxChart({
+        // palette: "Violet",
+        dataSource,
+        commonSeriesSettings: {
+          argumentField: "country",
+          type: "line",
+        },
+        margin: {
+          bottom: 20,
+        },
+        argumentAxis: {
+          valueMarginsEnabled: false,
+          discreteAxisDivisionMode: "crossLabels",
+          grid: {
+            visible: true,
+          },
+        },
+        series: [
+          { valueField: "Birth", name: "Birth" },
+          { valueField: "Death", name: "Death" },
+          { valueField: "Adoption", name: "Adoption" },
+          { valueField: "Marriage", name: "Marriage" },
+          { valueField: "Divorce", name: "Divorce" },
+        ],
+        legend: {
+          verticalAlignment: "bottom",
+          horizontalAlignment: "center",
+          itemTextPosition: "bottom",
+        },
+        title: {
+          text: "CIVIL REGISTRATION AND VITAL STATISTICS",
+          subtitle: {
+            text: "(Registration of the five modules)",
+          },
+        },
+        export: {
+          enabled: true,
+        },
+        tooltip: {
+          enabled: true,
+        },
+      });
+    });
+  </script>
+
+  <!-- Multi Pie chart -->
+  <script>
+    const dataPie = {
+      labels: [
+        "Birth Male",
+        "Birth Female",
+        "Adoption Male",
+        "Adoption Female",
+        "Death Male",
+        "Death Female",
+        "Marriage Male",
+        "Marriage Female",
+        "Divorced Male",
+        "Divorced Female",
+      ],
+      datasets: [
+        {
+          backgroundColor: ["#AAA", "#777"],
+          data: [21, 79],
+        },
+        {
+          backgroundColor: ["hsl(0, 100%, 60%)", "hsl(0, 100%, 35%)"],
+          data: [33, 67],
+        },
+        {
+          backgroundColor: ["hsl(100, 100%, 60%)", "hsl(100, 100%, 35%)"],
+          data: [20, 80],
+        },
+        {
+          backgroundColor: ["hsl(180, 100%, 60%)", "hsl(180, 100%, 35%)"],
+          data: [10, 90],
+        },
+        {
+          backgroundColor: ["hsl(190, 100%, 60%)", "hsl(190, 100%, 85%)"],
+          data: [90, 70],
+        },
+      ],
+    };
+
+    const configPie = {
+      type: "pie",
+      data: dataPie,
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            labels: {
+              generateLabels: function (chart) {
+                // Get the default label list
+                const original =
+                  Chart.overrides.pie.plugins.legend.labels.generateLabels;
+                const labelsOriginal = original.call(this, chart);
+
+                // Build an array of colors used in the datasets of the chart
+                let datasetColors = chart.data.datasets.map(function (e) {
+                  return e.backgroundColor;
+                });
+                datasetColors = datasetColors.flat();
+
+                // Modify the color and hide state of each label
+                labelsOriginal.forEach((label) => {
+                  // There are twice as many labels as there are datasets. This converts the label index into the corresponding dataset index
+                  label.datasetIndex = (label.index - (label.index % 2)) / 2;
+
+                  // The hidden state must match the dataset's hidden state
+                  label.hidden = !chart.isDatasetVisible(label.datasetIndex);
+
+                  // Change the color to match the dataset
+                  label.fillStyle = datasetColors[label.index];
+                });
+
+                return labelsOriginal;
+              },
+            },
+            onClick: function (mouseEvent, legendItem, legend) {
+              // toggle the visibility of the dataset from what it currently is
+              legend.chart.getDatasetMeta(legendItem.datasetIndex).hidden =
+                legend.chart.isDatasetVisible(legendItem.datasetIndex);
+              legend.chart.update();
+            },
+          },
+          tooltip: {
+            callbacks: {
+              label: function (context) {
+                const labelIndex = context.datasetIndex * 2 + context.dataIndex;
+                return (
+                  context.chart.data.labels[labelIndex] +
+                  ": " +
+                  context.formattedValue
+                );
+              },
+            },
+          },
+        },
+      },
+    };
+
+    const pieGraph = new Chart(document.getElementById("pieChart"), configPie);
+
+    // -----------------------------------------
+  </script>
+
+  <!-- Bar Multi -->
+  <script>
+    $(() => {
+      $("#barMulti").dxChart({
+        dataSource: dataSource_,
+        commonSeriesSettings: {
+          argumentField: "state",
+          type: "bar",
+          hoverMode: "allArgumentPoints",
+          selectionMode: "allArgumentPoints",
+          label: {
+            visible: true,
+            format: {
+              type: "fixedPoint",
+              precision: 0,
+            },
+          },
+        },
+        series: [
+          { valueField: "birth", name: "Birth" },
+          { valueField: "death", name: "Death" },
+          { valueField: "adoption", name: "Adoption" },
+          { valueField: "divorce", name: "Divorce" },
+          { valueField: "marriage", name: "Marriage" },
+        ],
+
+        legend: {
+          verticalAlignment: "bottom",
+          horizontalAlignment: "center",
+        },
+        export: {
+          enabled: true,
+        },
+        onPointClick(e) {
+          e.target.select();
+        },
+      });
+    });
+
+    const dataSource_ = [
+      {
+        state: "January",
+        birth: 200,
+        death: 300,
+        adoption: 400,
+        divorce: 200,
+        marriage: 100,
+      },
+      {
+        state: "Febuary",
+        birth: 500,
+        death: 600,
+        adoption: 200,
+        divorce: 600,
+        marriage: 300,
+      },
+      {
+        state: "March",
+        birth: 1000,
+        death: 300,
+        adoption: 400,
+        divorce: 200,
+        marriage: 100,
+      },
+      {
+        state: "April",
+        birth: 900,
+        death: 400,
+        adoption: 400,
+        divorce: 200,
+        marriage: 100,
+      },
+      {
+        state: "May",
+        birth: 600,
+        death: 200,
+        adoption: 400,
+        divorce: 200,
+        marriage: 100,
+      },
+      {
+        state: "June",
+        birth: 600,
+        death: 200,
+        adoption: 400,
+        divorce: 200,
+        marriage: 100,
+      },
+      {
+        state: "July",
+        birth: 600,
+        death: 200,
+        adoption: 400,
+        divorce: 200,
+        marriage: 100,
+      },
+      {
+        state: "August",
+        birth: 600,
+        death: 200,
+        adoption: 400,
+        divorce: 200,
+        marriage: 100,
+      },
+      {
+        state: "September",
+        birth: 600,
+        death: 200,
+        adoption: 400,
+        divorce: 200,
+        marriage: 100,
+      },
+      {
+        state: "October",
+        birth: 600,
+        death: 200,
+        adoption: 400,
+        divorce: 200,
+        marriage: 100,
+      },
+      {
+        state: "November",
+        birth: 600,
+        death: 200,
+        adoption: 400,
+        divorce: 200,
+        marriage: 100,
+      },
+      {
+        state: "December",
+        birth: 600,
+        death: 200,
+        adoption: 400,
+        divorce: 200,
+        marriage: 100,
+      },
+    ];
+  </script>
+</html>

@@ -1,0 +1,1143 @@
+<body class="scrollbar scrollbar-track-gray-100 scrollbar-thumb-gray-900">
+  <nav class="mt-5 flex flex-1 flex-col divide-y" aria-label="Sidebar">
+    <div class="space-y-1 px-2">
+      <a
+        href="./dashboard.html"
+        class="dashboard group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+        aria-current="page"
+      >
+        <svg
+          class="mr-4 h-6 w-6 flex-shrink-0"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+          />
+        </svg>
+        Dashboard
+      </a>
+
+      <details
+        class="parentDetails details-toggle group group flex w-full cursor-pointer items-center rounded-md px-1 py-2 text-sm font-bold text-white hover:text-white"
+      >
+        <summary class="relative flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="mr-4 h-6 w-6 flex-shrink-0"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+            />
+          </svg>
+          <h>User Management</h>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute right-0 h-4 w-4 group-open:-rotate-180 group-open:transform group-open:transition group-open:duration-500 group-open:ease-in-out"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </summary>
+
+        <div class="border-l-2 border-white pl-6">
+          <div
+            class="mt-2 flex w-full flex-row items-center space-x-2 rounded-md bg-crvsblue-700 py-2 font-medium"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 flex-shrink-0"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
+              />
+            </svg>
+            <a
+              class="staff flex w-full rounded-md py-2 px-2 text-sm text-white hover:bg-crvsblue-800"
+              href="./staffmanagement.html"
+              >Staff Management</a
+            >
+          </div>
+
+          <details
+            class="childDetails perm-details group group flex w-full cursor-pointer items-center rounded-md py-2 text-sm font-bold leading-6 text-white hover:text-white"
+          >
+            <summary class="relative flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="mr-4 h-6 w-6 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"
+                />
+              </svg>
+              <h>Permissions</h>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute right-0 h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </summary>
+            <div
+              class="mt-2 ml-2 space-y-2 border-l-2 border-white py-4 pl-6 font-medium"
+            >
+              <ul class="list-disc space-y-1 pl-2">
+                <li>
+                  <a
+                    class="permission flex rounded-md py-2 px-4 text-sm text-white hover:bg-crvsblue-800"
+                    href="./permissions.html"
+                    >Permissions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="userspermissions flex rounded-md py-2 px-4 text-sm text-white hover:bg-crvsblue-800"
+                    href="./userspermissions.html"
+                    >Users Permissions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="assignpermission flex whitespace-normal rounded-md py-2 px-4 text-sm text-white hover:bg-crvsblue-800"
+                    href="./assignuserpermission.html"
+                    >Assign Permissions</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <details
+            class="childDetails group-details group group flex w-full cursor-pointer items-center rounded-md py-2 text-sm font-bold leading-6 text-white hover:text-white"
+          >
+            <summary class="relative flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="mr-4 h-6 w-6 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <h>Groups</h>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute right-0 h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </summary>
+            <div
+              class="mt-2 space-y-2 border-l-2 border-white py-4 pl-6 font-medium"
+            >
+              <ul class="list-disc space-y-1 pl-2">
+                <li>
+                  <a
+                    class="groups flex rounded-md py-2 px-4 text-sm text-white hover:bg-crvsblue-800"
+                    href="./groups.html"
+                    >Group</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="assignGroupPermission flex whitespace-nowrap rounded-md py-2 px-1 text-sm text-white hover:bg-crvsblue-800"
+                    href="./assigngrouppermission.html"
+                    >Assign Group Permission</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="usergroups flex rounded-md py-2 px-4 text-sm text-white hover:bg-crvsblue-800"
+                    href="./groupusers.html"
+                    >User Group</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <details
+            class="childDetails logs-details group group flex w-full cursor-pointer items-center rounded-md py-2 text-sm font-bold leading-6 text-white hover:text-white"
+          >
+            <summary class="relative flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="mr-4 h-6 w-6 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                />
+              </svg>
+              <h>Activity Logs</h>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute right-0 h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </summary>
+            <div
+              class="mt-2 ml-2 space-y-2 border-l-2 border-white px-2 py-4 pl-6 font-medium"
+            >
+              <ul class="list-disc pl-2">
+                <li>
+                  <a
+                    class="all-logs flex rounded-md py-2 px-4 text-sm hover:bg-crvsblue-800"
+                    href="./alllogs.html"
+                    >All logs</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </details>
+
+      <details
+        class="parentDetails registration-toggle group flex w-full cursor-pointer items-center rounded-md px-1 py-2 text-sm font-bold text-white hover:text-white"
+      >
+        <summary class="relative flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="mr-4 h-6 w-6 flex-shrink-0"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16 15v-1a4 4 0 00-4-4H8m0 0l3 3m-3-3l3-3m9 14V5a2 2 0 00-2-2H6a2 2 0 00-2 2v16l4-2 4 2 4-2 4 2z"
+            />
+          </svg>
+          <h>Birth Registration</h>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute right-0 h-4 w-4 group-open:-rotate-180 group-open:transform group-open:transition group-open:duration-500 group-open:ease-in-out"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </summary>
+
+        <div class="mt-2 space-y-2 border-l-2 border-white pl-6">
+          <a
+            href="./dashboard.html"
+            class="dashboard group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              class="mr-4 h-6 w-6 flex-shrink-0"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+            Registration
+          </a>
+
+          <a
+            href="./earlyregistration.html"
+            class="group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              class="mr-4 h-6 w-6 flex-shrink-0"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+            Early Registration
+          </a>
+        </div>
+      </details>
+
+      <details
+        class="parentDetails death-toggle group flex w-full cursor-pointer items-center rounded-md px-1 py-2 text-sm font-bold text-white hover:text-white"
+      >
+        <summary class="relative flex items-center">
+          <svg
+            class="mr-4 h-6 w-6 flex-shrink-0"
+            viewBox="0 0 26 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.5 17C9.88071 17 11 15.8807 11 14.5C11 13.1193 9.88071 12 8.5 12C7.11929 12 6 13.1193 6 14.5C6 15.8807 7.11929 17 8.5 17Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M17.5 17C18.8807 17 20 15.8807 20 14.5C20 13.1193 18.8807 12 17.5 12C16.1193 12 15 13.1193 15 14.5C15 15.8807 16.1193 17 17.5 17Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M7 22.3125C4.86156 21.0047 3.20899 19.034 2.29383 16.7003C1.37867 14.3667 1.25105 11.798 1.93038 9.38513C2.60971 6.97229 4.0588 4.84748 6.05707 3.33413C8.05534 1.82078 10.4933 1.00177 13 1.00177C15.5067 1.00177 17.9447 1.82078 19.9429 3.33413C21.9412 4.84748 23.3903 6.97229 24.0696 9.38513C24.749 11.798 24.6213 14.3667 23.7062 16.7003C22.791 19.034 21.1384 21.0047 19 22.3125V25C19 25.2652 18.8946 25.5196 18.7071 25.7071C18.5196 25.8946 18.2652 26 18 26H8C7.73479 26 7.48043 25.8946 7.2929 25.7071C7.10536 25.5196 7 25.2652 7 25V22.3125Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M11 26V22"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15 26V22"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <h>Death Registration</h>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute right-0 h-4 w-4 group-open:-rotate-180 group-open:transform group-open:transition group-open:duration-500 group-open:ease-in-out"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </summary>
+
+        <div class="mt-2 space-y-2 border-l-2 border-white pl-6">
+          <a
+            href="./death-registration.html"
+            class="deathRegistration group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
+              />
+            </svg>
+            Registration
+          </a>
+
+          <a
+            href="./death-assessment.html"
+            class="deathAssessment group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
+              />
+            </svg>
+            Assessment
+          </a>
+          <a
+            href="./printing.html"
+            class="printing group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0l.229 2.523a1.125 1.125 0 01-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0021 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 00-1.913-.247M6.34 18H5.25A2.25 2.25 0 013 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 011.913-.247m10.5 0a48.536 48.536 0 00-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5zm-3 0h.008v.008H15V10.5z"
+              />
+            </svg>
+
+            Printing
+          </a>
+
+          <a
+            href="./issurance.html"
+            class="issurance group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
+              />
+            </svg>
+
+            Issurance
+          </a>
+        </div>
+      </details>
+
+      <details
+        class="parentDetails marriage-toggle group flex w-full cursor-pointer items-center rounded-md px-1 py-2 text-sm font-bold text-white hover:text-white"
+      >
+        <summary class="relative flex items-center">
+          <svg
+            class="mr-4 h-6 w-6 flex-shrink-0"
+            viewBox="0 0 31 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 14C13.5899 14 16.5 11.0899 16.5 7.5C16.5 3.91015 13.5899 1 10 1C6.41015 1 3.5 3.91015 3.5 7.5C3.5 11.0899 6.41015 14 10 14Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M18.425 1.2375C18.9996 1.08166 19.5922 1.00181 20.1875 1C21.9115 1 23.5648 1.68482 24.7837 2.90381C26.0027 4.12279 26.6875 5.77609 26.6875 7.5C26.6875 9.22391 26.0027 10.8772 24.7837 12.0962C23.5648 13.3152 21.9115 14 20.1875 14"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M1 18.675C2.01493 17.2307 3.36255 16.0519 4.92901 15.2381C6.49547 14.4243 8.23477 13.9995 10 13.9995C11.7652 13.9995 13.5045 14.4243 15.071 15.2381C16.6375 16.0519 17.9851 17.2307 19 18.675"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M20.1875 14C21.9529 13.9989 23.6925 14.4232 25.2592 15.237C26.8258 16.0508 28.1733 17.2301 29.1875 18.675"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <h>Marriage Registration</h>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute right-0 h-4 w-4 group-open:-rotate-180 group-open:transform group-open:transition group-open:duration-500 group-open:ease-in-out"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </summary>
+
+        <div class="mt-2 space-y-2 border-l-2 border-white pl-6">
+          <a
+            href="./marriage.html"
+            class="marriageRegistration group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            Registration
+          </a>
+
+          <a
+            href="./marriage-assessment.html"
+            class="marriageAssessment group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            Assessment
+          </a>
+        </div>
+      </details>
+
+      <details
+        class="parentDetails marriageRegistar-toggle group flex w-full cursor-pointer items-center rounded-md px-1 py-2 text-sm font-bold text-white hover:text-white"
+      >
+        <summary class="relative flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="mr-4 h-6 w-6 flex-shrink-0"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
+            />
+          </svg>
+
+          <h>Registrar Registration</h>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute right-0 h-4 w-4 group-open:-rotate-180 group-open:transform group-open:transition group-open:duration-500 group-open:ease-in-out"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </summary>
+
+        <div class="mt-2 space-y-2 border-l-2 border-white pl-6">
+          <a
+            href="./marriageregistrar.html"
+            class="marriageRegistar group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            Registration
+          </a>
+
+          <a
+            href="./booksmanagement.html"
+            class="marriageBooks group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+              />
+            </svg>
+
+            Books Management
+          </a>
+        </div>
+      </details>
+
+      <details
+        class="parentDetails adoption-toggle group flex w-full cursor-pointer items-center rounded-md px-1 py-2 text-sm font-bold text-white hover:text-white"
+      >
+        <summary class="relative flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="mr-4 h-6 w-6 flex-shrink-0"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z"
+            />
+          </svg>
+
+          <h>Adoption Registration</h>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute right-0 h-4 w-4 group-open:-rotate-180 group-open:transform group-open:transition group-open:duration-500 group-open:ease-in-out"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </summary>
+
+        <div class="mt-2 space-y-2 border-l-2 border-white pl-6">
+          <a
+            href="./adoption-assessment.html"
+            class="adoptionAssessment group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            Assessment
+          </a>
+        </div>
+      </details>
+      <details
+        class="parentDetails report-toggle group flex w-full cursor-pointer items-center rounded-md px-1 py-2 text-sm font-bold text-white hover:text-white"
+      >
+        <summary class="relative flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="mr-4 h-6 w-6 flex-shrink-0"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z"
+            />
+          </svg>
+
+          <h>Reports</h>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute right-0 h-4 w-4 group-open:-rotate-180 group-open:transform group-open:transition group-open:duration-500 group-open:ease-in-out"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </summary>
+
+        <div class="mt-2 space-y-2 border-l-2 border-white pl-6">
+          <a
+            href="./report.html"
+            class="mainReports group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
+              />
+            </svg>
+
+            <h> Main Report </h>
+          </a>
+          <a
+            href="./revenuereport.html"
+            class="revenueReports group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"
+              />
+            </svg>
+
+            <h> Revenue Report </h>
+          </a>
+
+          <a
+            href="./annualreport.html"
+            class="annualReports group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+              />
+            </svg>
+
+            <h> Annual Report </h>
+          </a>
+          <a
+            href="./issuancereport.html"
+            class="insuranceReports group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+              />
+            </svg>
+
+            <h> Issuance Report </h>
+          </a>
+          <a
+            href="./printingreport.html"
+            class="printingReports group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0l.229 2.523a1.125 1.125 0 01-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0021 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 00-1.913-.247M6.34 18H5.25A2.25 2.25 0 013 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 011.913-.247m10.5 0a48.536 48.536 0 00-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5zm-3 0h.008v.008H15V10.5z"
+              />
+            </svg>
+
+            <h> Printing & Repriniting Report </h>
+          </a>
+          <a
+            href="./topreport.html"
+            class="topReports group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525"
+              />
+            </svg>
+
+            <h>Top District Report </h>
+          </a>
+          <a
+            href="./customizablereport.html"
+            class="customizableReports group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-4 h-6 w-6 flex-shrink-0"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 13.5V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 9.75V10.5"
+              />
+            </svg>
+
+            <h> Customizable Report </h>
+          </a>
+        </div>
+      </details>
+
+      <a
+        href="./searching.html"
+        class="search group flex items-center rounded-md px-2 py-2 text-sm font-bold leading-6 text-white hover:bg-crvsblue-900"
+        aria-current="page"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="mr-4 h-6 w-6 flex-shrink-0"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+          />
+        </svg>
+
+        Searching
+      </a>
+    </div>
+  </nav>
+
+  <script
+    src="../js/buttonControls.js"
+    type="text/javascript"
+    charset="utf8"
+  ></script>
+
+  <script>
+    $(document).ready(function () {
+      const parentDetails = document.querySelectorAll(".parentDetails");
+      const childDetails = document.querySelectorAll(".childDetails");
+
+      parentDetails.forEach((dt) => {
+        dt.addEventListener("toggle", toggleOpenOneOnly_);
+      });
+
+      function toggleOpenOneOnly_(e) {
+        if (this.open) {
+          parentDetails.forEach((deet) => {
+            if (deet != this && deet.open) deet.open = false;
+          });
+        }
+      }
+
+      childDetails.forEach((dt) => {
+        dt.addEventListener("toggle", toggleOpenOneOnly);
+      });
+
+      function toggleOpenOneOnly(e) {
+        if (this.open) {
+          childDetails.forEach((deet) => {
+            if (deet != this && deet.open) deet.open = false;
+          });
+        }
+      }
+
+      function sectionDetails(cls) {
+        var details = document.getElementsByClassName(cls);
+        console.log(details.length);
+        details[1].setAttribute("open", true);
+      }
+
+      var pageURL = window.location.href;
+
+      if (pageURL.includes("/pages/staffmanagement.html")) {
+        sectionDetails("details-toggle");
+        $(".staff").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/dashboard.html")) {
+        $(".dashboard").addClass("bg-crvsblue-900 ");
+      } else if (pageURL.includes("/pages/searching.html")) {
+        $(".search").addClass("bg-crvsblue-900 ");
+      } else if (pageURL.includes("/pages/permissions.html")) {
+        sectionDetails("perm-details");
+        sectionDetails("details-toggle");
+
+        $(".permission").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/assignuserpermission.html")) {
+        sectionDetails("perm-details");
+        sectionDetails("details-toggle");
+
+        $(".assignpermission").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/userspermissions.html")) {
+        sectionDetails("perm-details");
+        sectionDetails("details-toggle");
+
+        $(".userspermissions").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/groups.html")) {
+        sectionDetails("group-details");
+        sectionDetails("details-toggle");
+
+        $(".groups").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/groupusers.html")) {
+        sectionDetails("group-details");
+        sectionDetails("details-toggle");
+
+        $(".usergroups").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/registration.html")) {
+        sectionDetails("registration-toggle");
+
+        $(".registration").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/alllogs.html")) {
+        sectionDetails("logs-details");
+        sectionDetails("details-toggle");
+
+        $(".all-logs").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/assigngrouppermission.html")) {
+        sectionDetails("group-details");
+        sectionDetails("details-toggle");
+
+        $(".assignGroupPermission").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("pages/earlyregistration.html")) {
+        // sectionDetails("reg-details");
+        sectionDetails("registration-toggle");
+
+        $(".earlyRegistration").addClass("bg-crvsblue-900");
+      } else if (
+        pageURL.includes("pages/earlybirthform.html") ||
+        pageURL.includes("pages/earlybirthregistration.html")
+      ) {
+        sectionDetails("reg-details");
+        sectionDetails("registration-toggle");
+
+        $(".earlyRegistration").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/death-registration.html")) {
+        sectionDetails("death-toggle");
+
+        $(".deathRegistration").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/death-assessment.html")) {
+        sectionDetails("death-toggle");
+
+        $(".deathAssessment").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/marriage.html")) {
+        sectionDetails("marriage-toggle");
+
+        $(".marriageRegistration").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/marriage-assessment.html")) {
+        sectionDetails("marriage-toggle");
+
+        $(".marriageAssessment").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/marriageregistrar.html")) {
+        sectionDetails("marriageRegistar-toggle");
+
+        $(".marriageRegistar").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/booksmanagement.html")) {
+        sectionDetails("marriageRegistar-toggle");
+
+        $(".marriageBooks").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/adoption-assessment.html")) {
+        sectionDetails("adoption-toggle");
+
+        $(".adoptionAssessment").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/printing.html")) {
+        sectionDetails("death-toggle");
+
+        $(".printing").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/issurance.html")) {
+        sectionDetails("death-toggle");
+
+        $(".issurance").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/report.html")) {
+        sectionDetails("report-toggle");
+
+        $(".mainReports").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/revenuereport.html")) {
+        sectionDetails("report-toggle");
+
+        $(".revenueReports").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/annualreport.html")) {
+        sectionDetails("report-toggle");
+
+        $(".annualReports").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/issuancereport.html")) {
+        sectionDetails("report-toggle");
+
+        $(".insuranceReports").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/printingreport.html")) {
+        sectionDetails("report-toggle");
+
+        $(".printingReports").addClass("bg-crvsblue-900");
+      } else if (pageURL.includes("/pages/customizablereport.html")) {
+        sectionDetails("report-toggle");
+
+        $(".customizableReports").addClass("bg-crvsblue-900");
+      }
+      else if (pageURL.includes("/pages/topreport.html")) {
+        sectionDetails("report-toggle");
+
+        $(".topReports").addClass("bg-crvsblue-900");
+      }
+    });
+  </script>
+</body>
